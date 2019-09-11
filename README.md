@@ -1,6 +1,6 @@
 # familymatters
 
-User Stories:
+User Stories (*MVP*):
 
 * Users can add all of their family members, pets, and plants to their profile.
 * Users can add items to their goals, habbits, calendar and to do list for each member.
