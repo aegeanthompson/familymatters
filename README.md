@@ -1,5 +1,10 @@
 # familymatters
 
+Technologies Used: 
+* Laravel 5.7
+* PHP 
+* Wordpress 
+
 User Stories (*MVP*):
 
 * Users can add all of their family members, pets, and plants to their profile.
@@ -11,3 +16,5 @@ Stretch Goals:
 * Set-up reward system for meeting certain achievements. 
 * Be able to send email reminders to user.
 * All family members can log on to one board.
+
+Deployed on Heroku: 
