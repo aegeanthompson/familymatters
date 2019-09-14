@@ -18,3 +18,6 @@ Stretch Goals:
 * All family members can log on to one board.
 
 Deployed on Heroku: 
+
+
+Studying laravel set-up from scratch. 
