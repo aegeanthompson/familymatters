@@ -81,7 +81,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laracast
+                    Here we go!!!!
+                    <p>
+                      <a href="/contact">Contact</a> us to learn more!
+                    </p>
                 </div>
 
                 <div class="links">
