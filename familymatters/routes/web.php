@@ -15,8 +15,14 @@ Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
-Route::get('/members', 'MembersController@index');
+//// ROUTES ////
 
-Route::get('/members/create', 'MembersController@create');
+Route::resource('members', 'MembersController');
 
-Route::post('/members', 'MembersController@store');
+// Route::get('/members', 'MembersController@index');
+// Route::get('/members/create', 'MembersController@create');
+// Route::get('members/{member}', 'MembersController@show');
+// Route::post('/members', 'MembersController@store');
+// Route::get('members/{member}/edit', 'MembersController@edit')
+// Route::patch('members/{member}', 'MembersController@update');
+// Route::delete('members/{member}',  'MembersController@destroy');
