@@ -17,6 +17,8 @@ class Members extends Migration
           $table->increments('id');
           $table->text('name');
           $table->text('habbits');
+          $table->timestamps('updated_at');
+          $table->timestamps('created_at');
         })
     }
 

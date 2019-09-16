@@ -14,4 +14,23 @@ class MembersController extends Controller
 
         return view('members.index', compact('members'));
     }
+
+    public function create()
+    {
+      return view('members.create');
+    }
+
+    public function store()
+    {
+      $member = new Member();
+
+      $member->name =  request('name');
+      $member->habbits =  request('habbits');
+
+      $member->save();
+
+      return redirect('/members');
+
+    }
+
 }

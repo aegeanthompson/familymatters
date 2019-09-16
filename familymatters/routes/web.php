@@ -16,3 +16,7 @@ Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
 Route::get('/members', 'MembersController@index');
+
+Route::get('/members/create', 'MembersController@create');
+
+Route::post('/members', 'MembersController@store');
