@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'base64:0D/GsNEKC1Oimn+DIb4o3annNL21puleseyiU4h8rWs='),
 
     /*
     |--------------------------------------------------------------------------
