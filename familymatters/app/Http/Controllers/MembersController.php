@@ -27,13 +27,13 @@ class MembersController extends Controller
 
     public function edit($id)
     {
-        $member = Member::find($id);
+        $member = Member::findorFail($id);
         return view('members.edit', compact('member'));
     }
 
     public function update($id)
     {
-        $member = Member::find($id);
+        $member = Member::findorFail($id);
 
         $member->name = request('name');
         $member->habbits = request('habbits');
@@ -43,9 +43,11 @@ class MembersController extends Controller
         return redirect('/members');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+      Member::findorFail($id)->delete();
 
+      return redirect('/members');
     }
 
     public function store()
