@@ -1,0 +1,65 @@
+body {
+  background-color:  #ffffff;
+  text-align: center;
+  padding: 2em;
+}
+
+.banner {
+  width: 70%;
+  height: 17em;
+}
+
+.header {
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-size: 4em;
+  padding-top: 1em;
+  font-family: 'Dancing Script', cursive;
+  color: #d66b56;
+  text-transform: lowercase;
+}
+
+li {
+  text-align: left;
+  padding-left: 5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+
+}
+
+.profileImg {
+  width: 25%;
+  height: 25%;
+  border-radius: 12em;
+  padding: 2em;
+}
+
+.members {
+  padding-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(204,164,123,0.3);
+  width: 100%;
+}
+
+.name {
+  padding-top: 3em;
+  font-size: 2em;
+  font-family: 'Dancing Script', cursive;
+  color: #d66b56;
+  text-transform: lowercase;
+}
+
+input, button {
+  margin: 0.5em;
+}
+
+.showName {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 3em;
+  color: rgba(204,164,123,0.7);
+}

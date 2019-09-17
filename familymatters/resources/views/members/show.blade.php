@@ -6,19 +6,17 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <title>family matters</title>
+    <title>{{ $member->name }}</title>
   </head>
   <body>
-    <img class="banner" src="https://imgur.com/lYYoUml.png" alt="family matters">
-    <h3 class="header">~family members~</h3>
-
-    <div class="members">
-
-        @foreach ($members as $member)
-      <img href="/{{ $member->id }}" class="profileImg" src="{{ $member-> image }}" alt="picture of {{ $member->name }}">
-        <a href="/members/{{ $member->id }}"><h3 class="name">{{ $member->name }}</h3></a>
-        @endforeach
-
-    </div>
+    <h1 class="showName">{{ $member->name }}</h1>
+    <img href="/{{ $member->id }}" class="profileImg" src="{{ $member-> image }}" alt="picture of {{ $member->name }}">
+    <h3>current goal: {{ $member->habit }}</h3>
+    <form action="/members">
+      <input type="submit" value="Home" />
+    </form>
+    <form action="/members/{{ $member->id }}/edit">
+      <input type="submit" value="Edit Member" />
+    </form>
   </body>
 </html>

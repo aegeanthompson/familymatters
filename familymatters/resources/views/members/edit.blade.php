@@ -16,10 +16,10 @@
     </div>
 
     <div class="field">
-      <label class="label" for="habbits">Habbit: </label>
+      <label class="label" for="habit">Habit: </label>
 
       <div class="control">
-        <input type="text" class="input" name="habbits" placeholder="Habbit" value="{{ $member->habbits }}">
+        <input type="text" class="input" name="habit" placeholder="Habit" value="{{ $member->habit }}">
       </div>
   </div>
 
@@ -40,5 +40,9 @@
         <button type="submit" class="button">Delete Member</button>
       </div>
     </div>
+  </form>
+
+  <form action="/members/{{ $member->id }}">
+    <input type="submit" value="Back" />
   </form>
 @endsection

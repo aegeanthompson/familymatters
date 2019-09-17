@@ -20,9 +20,11 @@ class MembersController extends Controller
       return view('members.create');
     }
 
-    public function show()
+    public function show($id)
     {
-
+      $member = Member::findorFail($id);
+      return view('members.show',
+      compact('member'));
     }
 
     public function edit($id)
@@ -36,7 +38,7 @@ class MembersController extends Controller
         $member = Member::findorFail($id);
 
         $member->name = request('name');
-        $member->habbits = request('habbits');
+        $member->habit = request('habit');
 
         $member->save();
 
@@ -55,7 +57,7 @@ class MembersController extends Controller
       $member = new Member();
 
       $member->name =  request('name');
-      $member->habbits =  request('habbits');
+      $member->habit =  request('habit');
 
       $member->save();
 

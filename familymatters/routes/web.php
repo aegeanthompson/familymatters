@@ -19,6 +19,8 @@ Route::get('/contact', 'PagesController@contact');
 
 Route::resource('members', 'MembersController');
 
+Route::get('members/{member}', 'MembersController@show');
+
 // Route::get('/members', 'MembersController@index');
 // Route::get('/members/create', 'MembersController@create');
 // Route::get('members/{member}', 'MembersController@show');
