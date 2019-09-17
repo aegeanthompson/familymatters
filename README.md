@@ -3,12 +3,14 @@
 Technologies Used:
 * Laravel 5.7
 * PHP
-* Wordpress
+* Apache
+* MySQL
+* Symphony
 
 User Stories (*MVP*):
 
 * Users can add all of their family members, pets, and plants to their profile.
-* Users can add items to their goals, habbits, calendar and to do list for each member.
+* Users can add items to their goals, habits, calendar and to do list for each member.
 * Users can track progress of each category.
 
 Stretch Goals:
@@ -17,10 +19,4 @@ Stretch Goals:
 * Be able to send email reminders to user.
 * All family members can log on to one board.
 
-Deployed on Heroku:
-
-
-Studying laravel set-up from scratch.
-
-
-testing heroku 
+Deployed on Heroku: https://secure-hollows-64668.herokuapp.com/
