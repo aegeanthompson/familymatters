@@ -26,11 +26,11 @@
   </nav>
   <body>
     <h1 class="showName">{{ $member->name }}</h1>
-    <img href="/{{ $member->id }}" class="profileImg" src="{{ $member-> image }}" alt="picture of {{ $member->name }}">
+    <img href="/{{ $member->id }}" class="showPageImgs" src="{{ $member-> image }}" alt="picture of {{ $member->name }}">
     <img class="plusSign" src="https://imgur.com/APYZtW5.png">
-    <img class="profileImg"src="{{ $member->habit_image}}">
+    <img class="showPageImgs"src="{{ $member->habit_image}}">
       <img class="plusSign" src="https://www.pngarts.com/files/4/Equal-Sign-Transparent-Image.png">
-      <img class="profileImg"src="{{ $member->prize_image}}">
+      <img class="showPageImgs"src="{{ $member->prize_image}}">
     <h3>current goal: {{ $member->habit }}</h3>
     <ul class="list-group">
   <li class="list-group-item list-group-item-primary">Day 1</li>
@@ -55,6 +55,6 @@
   <li class="list-group-item list-group-item-secondary">Day 20</li>
   <li class="confetti-button list-group-item list-group-item-success">Day 21</li>
 </ul>
-<button id="confetti" type="button" name="button">I DID IT - YAY ME!</button>
+<button id="confetti" class="btn  btn-block btn-secondary"type="button" name="button">I DID IT - YAY ME!</button>
   </body>
 </html>

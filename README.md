@@ -7,6 +7,7 @@ Technologies Used:
 * MySQL
 * jQuery
 * Symphony
+* Bootstrap
 
 User Stories (*MVP*):
 
