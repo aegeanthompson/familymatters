@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+Edit {{ $member->name }}
+@endsection
+
 @section('content')
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="/members">family matters</a>
@@ -14,31 +18,55 @@
     </div>
   </div>
 </nav>
-  <h1>Edit Member</h1>
+  <h3 class="editMemberHeader">Edit Member</h3>
 
   <form method="POST" action="/members/{{ $member->id }}">
       {{ method_field('PATCH') }}
       {{ csrf_field() }}
 
-      <div class="field">
+      <div class="field form-group row">
         <label class="label" for="name">Name: </label>
 
-        <div class="control">
-          <input type="text" class="input" name="name" placeholder="Name" value="{{ $member->name }}">
+        <div class="control col-lg">
+          <input type="text" class="input form-control" name="name" placeholder="Name" value="{{ $member->name }}">
         </div>
     </div>
 
-    <div class="field">
-      <label class="label" for="habit">Habit: </label>
+    <div class="field form-group row">
+      <label for="habit">Habit: </label>
 
-      <div class="control">
-        <input type="text" class="input" name="habit" placeholder="Habit" value="{{ $member->habit }}">
+      <div class="control col-lg">
+        <input type="text" class="input form-control" name="habit" placeholder="Habit" value="{{ $member->habit }}">
       </div>
   </div>
 
+  <div class="field form-group row">
+    <label for="image">Image: </label>
+
+    <div class="control col-lg">
+      <input type="text" class="input form-control" name="image" placeholder="image link" value="{{ $member->image }}">
+    </div>
+</div>
+
+<div class="field form-group row">
+  <label for="image">Habit Image: </label>
+
+  <div class="control col-lg">
+    <input type="text" class="input form-control" name="habit_image" placeholder="habit image link" value="{{ $member->habit_image }}">
+  </div>
+</div>
+
+<div class="field form-group row">
+  <label for="image">Prize Image: </label>
+
+  <div class="control col-lg">
+    <input type="text" class="input form-control" name="prize_image" placeholder="prize image link" value="{{ $member->prize_image }}">
+  </div>
+</div>
+
       <div class="field">
         <div class="control">
-          <button type="submit" class="button">Update Member</button>
+          <button type="submit" class="btn btn-outline-secondary">Update Member</button>
         </div>
       </div>
   </form>
@@ -50,7 +78,7 @@
 
     <div class="field">
       <div class="control">
-        <button type="submit" class="button">Delete Member</button>
+        <button type="submit" class="btn btn-outline-secondary">Delete Member</button>
       </div>
     </div>
   </form>

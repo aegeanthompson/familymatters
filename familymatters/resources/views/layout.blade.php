@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <title></title>
+    <title>@yield('title')</title>
   </head>
   <body>
 

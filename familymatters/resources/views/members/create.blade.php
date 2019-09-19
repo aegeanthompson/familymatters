@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+@extends('layout')
 
-    <title>Add New Member</title>
-  </head>
+@section('title')
+Add Member
+@endsection
+
+@section('content')
   <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="/members">family matters</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,26 +17,54 @@
     </div>
   </nav>
   <body>
-    <h1>Add New Family Member: </h1>
+    <h3 class="addMemberHeader">Add New Family Member: </h3>
 
-    <form method="POST" action="/members">
+    <form class="createForm" method="POST" action="/members">
         {{ csrf_field() }}
-      <div>
-        <input type="text" name="name" value="Name">
+
+      <div class="field form-group row">
+        <label class="label" for="name">Name: </label>
+
+      <div class="control col-lg">
+        <input type="text" class="input form-control" name="name" placeholder="Name">
       </div>
+    </div>
+
+    <div class="field form-group row">
+        <label for="habit">Habit: </label>
+
+      <div class="control col-lg">
+        <input type="text" class="input form-control" name="habit" placeholder="Habit">
+      </div>
+    </div>
+
+    <div class="field form-group row">
+      <label for="image">Image: </label>
+
+      <div class="control col-lg">
+        <input type="text" class="input form-control" name="image" placeholder="image link">
+      </div>
+  </div>
+
+  <div class="field form-group row">
+    <label for="image">Habit Image: </label>
+
+    <div class="control col-lg">
+      <input type="text" class="input form-control" name="habit_image" placeholder="habit image link">
+    </div>
+  </div>
+
+  <div class="field form-group row">
+    <label for="image">Prize Image: </label>
+
+    <div class="control col-lg">
+      <input type="text" class="input form-control" name="prize_image" placeholder="prize image link">
+    </div>
+  </div>
 
       <div>
-        <input type="text" name="habit" value="Habit">
-      </div>
-
-      <div>
-        <button type="submit">Add Member</button>
+        <button class="btn btn-outline-secondary" type="submit">Add Member</button>
       </div>
     </form>
 
-    <form action="/members">
-      <input type="submit" value="Back" />
-    </form>
-
-  </body>
-</html>
+@endsection

@@ -11,14 +11,11 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
-Route::get('/about', 'PagesController@about');
-Route::get('/contact', 'PagesController@contact');
 
 //// ROUTES ////
 
+Route::get('/', 'MembersController@index');
 Route::resource('members', 'MembersController');
-
 Route::get('members/{member}', 'MembersController@show');
 
 // Route::get('/members', 'MembersController@index');
