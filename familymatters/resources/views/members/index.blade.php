@@ -23,6 +23,11 @@
   <body>
     <img class="banner" src="https://imgur.com/lJnQcL7.png" alt="family matters">
     <h4 class="quote">“We are what we repeatedly do.”  -Will Durant</h4>
+    <p class="indexPageText">Your life becomes the sum of the habits you form. <br>
+    Taking the time to form new habits can move you forward in the direction you are wanting to head in life.<br>
+    Why not make it more fun by adding prizes and doing it as a family?</p>
+    <h3>The Power of Forming Habits</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iUKwFuV6FaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h3 class="header">~family members~</h3>
 
     <div class="members">

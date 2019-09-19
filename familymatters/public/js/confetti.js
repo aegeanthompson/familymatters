@@ -157,7 +157,7 @@ var confetti = {
 		else
 			startConfetti();
 	}
-
+	
 	function isConfettiRunning() {
 		return streamingConfetti;
 	}
@@ -211,23 +211,3 @@ var confetti = {
 		}
 	}
 })();
-
-$( () => {
-
-  const $dayDone = $('.dayDone');
-
-  const crossOut = () => {
-    $dayDone.addClass( "crossOut");
-  }
-
-    $dayDone.on('click', crossOut);
-
-  const $confetti = $('#confetti');
-
-  const partyTime = () => {
-    startConfetti();
-  }
-
-  $confetti.on('click', partyTime);
-
-});

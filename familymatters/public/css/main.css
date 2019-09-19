@@ -103,3 +103,16 @@ input, button {
   width: 5%;
   height: 5%;
 }
+
+.crossOut {
+  text-decoration: line-through;
+}
+
+.indexPageText {
+  padding-top: 2em;
+}
+
+iframe {
+  padding-top: 1.5em;
+  margin: 0;
+}
