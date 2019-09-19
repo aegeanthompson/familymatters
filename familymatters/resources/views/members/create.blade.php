@@ -15,8 +15,6 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="/members">Home <span class="sr-only"></span></a>
-        <a class="nav-item nav-link" href="/members/create">Add Member</a>
-        <a class="nav-item nav-link" href="/members/{{ $member->id }}/edit">Edit Member</a>
       </div>
     </div>
   </nav>

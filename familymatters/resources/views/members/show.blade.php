@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -22,13 +24,13 @@
     </div>
   </nav>
   <body>
-    <h1 class="showName">{{ $member->name }}</h1>
+    <h1 class="showName dayDone">{{ $member->name }}</h1>
     <img href="/{{ $member->id }}" class="profileImg" src="{{ $member-> image }}" alt="picture of {{ $member->name }}">
-    <img src="https://imgur.com/APYZtW5">
+    <img class="plusSign" src="https://imgur.com/APYZtW5.png">
     <h3>current goal: {{ $member->habit }}</h3>
     <ul class="list-group">
   <li class="list-group-item list-group-item-primary">Day 1</li>
-  <li class="list-group-item list-group-item-secondary">Day 2</li>
+  <li class="list-group-item list-group-item-secondary dayDone">Day 2</li>
   <li class="list-group-item list-group-item-success">Day 3</li>
   <li class="list-group-item list-group-item-primary">Day 4</li>
   <li class="list-group-item list-group-item-secondary">Day 5</li>

@@ -19,4 +19,4 @@ Stretch Goals:
 * Be able to send email reminders to user.
 * All family members can log on to one board.
 
-Deployed on Heroku: https://secure-hollows-64668.herokuapp.com/
+Deployed on Heroku: https://afternoon-caverns-59979.herokuapp.com/members

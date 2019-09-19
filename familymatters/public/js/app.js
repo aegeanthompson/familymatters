@@ -1,8 +1,6 @@
-require('./bootstrap');
-
 $( () => {
 
-  const dayDone = $('.dayDone');
+  const $dayDone = $('.dayDone');
 
   const crossOut = () => {
     $dayDone.css('text-decoration', 'line-through');

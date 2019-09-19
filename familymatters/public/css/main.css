@@ -98,3 +98,8 @@ input, button {
   width: 40%;
   text-align: center;
 }
+
+.plusSign {
+  width: 5%;
+  height: 5%;
+}
