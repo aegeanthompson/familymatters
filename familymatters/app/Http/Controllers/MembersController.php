@@ -39,6 +39,9 @@ class MembersController extends Controller
 
         $member->name = request('name');
         $member->habit = request('habit');
+        $member->image = request('image');
+        $member->habit_image = request('habit_image');
+        $member->prize_image = request('prize_image');
 
         $member->save();
 
@@ -58,6 +61,9 @@ class MembersController extends Controller
 
       $member->name =  request('name');
       $member->habit =  request('habit');
+      $member->image = request('image');
+      $member->habit_image = request('habit_image');
+      $member->prize_image = request('prize_image');
 
       $member->save();
 

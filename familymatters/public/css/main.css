@@ -133,8 +133,8 @@ iframe {
 
 .showPageImgs {
   width: 20%;
-  height: 30%;
-  border-radius: 10em;
+  height: 15em;
+  border-radius: 12em;
   padding-right: 1em;
 }
 
@@ -149,8 +149,62 @@ iframe {
   padding-bottom: 0.7em;
 }
 
-/* .createForm {
-  display: flex;
-  align-items: center;
+@media only screen and (max-width: 875px) {
+
+.banner {
+  width: 80%;
+  height: 12em;
+}
+
+.quote {
+  font-size: 1.75em;
+}
+
+.indexPageText {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+iframe {
+  width: 90%;
+}
+
+.profileImg {
+  width: 75%;
+  height: 75%;
+  border-radius: 27em;
+  padding: 0em;
+}
+
+.members {
   flex-direction: column;
-} */
+  align-items: center;
+  padding: 1em;
+}
+
+.name {
+  padding: 1em;
+}
+
+.showPageImgs {
+  width: 35%;
+  height: 15em;
+  padding-bottom: 0.5em;
+}
+
+.plusSign {
+  width: 10%;
+  height: 6%;
+  padding-bottom: 0.5em;
+}
+
+.allImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}

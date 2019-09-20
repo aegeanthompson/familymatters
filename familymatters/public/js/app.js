@@ -212,13 +212,116 @@ var confetti = {
 	}
   $( () => {
 
-    const $dayDone = $('.dayDone');
+    const $day1 = $('#day1');
+		const $day2 = $('#day2');
+		const $day3 = $('#day3');
+		const $day4 = $('#day4');
+		const $day5 = $('#day5');
+		const $day6 = $('#day6');
+		const $day7 = $('#day7');
+		const $day8 = $('#day8');
+		const $day9 = $('#day9');
+		const $day10 = $('#day10');
+		const $day11 = $('#day11');
+		const $day12 = $('#day12');
+		const $day13 = $('#day13');
+		const $day14 = $('#day14');
+		const $day15 = $('#day15');
+		const $day16 = $('#day16');
+		const $day17 = $('#day17');
+		const $day18 = $('#day18');
+		const $day19 = $('#day19');
+		const $day20 = $('#day20');
+		const $day21 = $('#day21');
 
-    const crossOut = () => {
-      $dayDone.addClass( "crossOut");
+
+    const day1Done = () => {
+        $day1.addClass( "crossOut");
     }
+		const day2Done = () => {
+				$day2.addClass( "crossOut");
+		}
+		const day3Done = () => {
+				$day3.addClass( "crossOut");
+		}
+		const day4Done = () => {
+				$day4.addClass( "crossOut");
+		}
+		const day5Done = () => {
+				$day5.addClass( "crossOut");
+		}
+		const day6Done = () => {
+				$day6.addClass( "crossOut");
+		}
+		const day7Done = () => {
+				$day7.addClass( "crossOut");
+		}
+		const day8Done = () => {
+				$day8.addClass( "crossOut");
+		}
+		const day9Done = () => {
+				$day9.addClass( "crossOut");
+		}
+		const day10Done = () => {
+				$day10.addClass( "crossOut");
+		}
+		const day11Done = () => {
+				$day11.addClass( "crossOut");
+		}
+		const day12Done = () => {
+				$day12.addClass( "crossOut");
+		}
+		const day13Done = () => {
+				$day13.addClass( "crossOut");
+		}
+		const day14Done = () => {
+				$day14.addClass( "crossOut");
+		}
+		const day15Done = () => {
+				$day15.addClass( "crossOut");
+		}
+		const day16Done = () => {
+				$day16.addClass( "crossOut");
+		}
+		const day17Done = () => {
+				$day17.addClass( "crossOut");
+		}
+		const day18Done = () => {
+				$day18.addClass( "crossOut");
+		}
 
-      $dayDone.on('click', crossOut);
+		const day19Done = () => {
+				$day19.addClass( "crossOut");
+		}
+		const day20Done = () => {
+				$day20.addClass( "crossOut");
+		}
+		const day21Done = () => {
+				$day21.addClass( "crossOut");
+		}
+
+      $day1.on('click', day1Done);
+			$day2.on('click', day2Done);
+			$day3.on('click', day3Done);
+			$day4.on('click', day4Done);
+			$day5.on('click', day5Done);
+			$day6.on('click', day6Done);
+			$day7.on('click', day7Done);
+			$day8.on('click', day8Done);
+			$day9.on('click', day9Done);
+			$day10.on('click', day10Done);
+			$day11.on('click', day11Done);
+			$day12.on('click', day12Done);
+			$day13.on('click', day13Done);
+			$day14.on('click', day14Done);
+			$day15.on('click', day15Done);
+			$day16.on('click', day16Done);
+			$day17.on('click', day17Done);
+			$day18.on('click', day18Done);
+			$day19.on('click', day19Done);
+			$day20.on('click', day20Done);
+			$day21.on('click', day21Done);
+
 
     const $confetti = $('#confetti');
 

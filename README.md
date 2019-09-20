@@ -6,7 +6,7 @@ Technologies Used:
 * Apache
 * MySQL
 * jQuery
-* Symphony
+* Symfony
 * Bootstrap
 
 User Stories (*MVP*):
