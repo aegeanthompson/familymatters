@@ -25,7 +25,7 @@ Edit {{ $member->name }}
       {{ csrf_field() }}
 
       <div class="field form-group row">
-        <label class="label" for="name">Name: </label>
+        <label for="name">Name: </label>
 
         <div class="control col-lg">
           <input type="text" class="input form-control" name="name" placeholder="Name" value="{{ $member->name }}">

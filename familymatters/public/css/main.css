@@ -207,4 +207,8 @@ iframe {
   align-items: center;
 }
 
+.editMemberHeader {
+  padding-top: 2em;
+}
+
 }
